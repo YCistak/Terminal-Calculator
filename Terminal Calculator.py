@@ -1,10 +1,13 @@
 def calculator():
     print("Python Calculator")
     print("Operations: +  -  *  /")
+    print("Type 'q' to quit.\n")
     
 
     while True:
         operation = input("Choose an operation (+, -, *, /) or : ").strip()
+        if operation.lower() == "q":
+            break
         
 
         if operation not in {"+", "-", "*", "/"}:
